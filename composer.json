@@ -28,8 +28,8 @@
     "require": {
         "php": ">=8.2",
         "giggsey/libphonenumber-for-php": "^9.0",
-        "simialbi/yii2-rest-client": "^2.0.1",
-        "yiisoft/yii2": "^2.0.54"
+        "yiisoft/yii2": "^2.0.54",
+        "yiisoft/yii2-httpclient": "^2.0.16"
     },
     "autoload": {
         "psr-4": {

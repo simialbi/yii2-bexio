@@ -2,20 +2,14 @@
 
 namespace simialbi\bexio\models;
 
+use yii\base\Model;
+
 /**
  * @property int $id
  * @property string $name
  */
-class Salutation extends ActiveRecord
+class Salutation extends Model
 {
-    /**
-     * {@inheritDoc}
-     */
-    public static function primaryKey(): array
-    {
-        return ['id'];
-    }
-
     /**
      * {@inheritDoc}
      */

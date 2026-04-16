@@ -2,6 +2,8 @@
 
 namespace simialbi\bexio\models;
 
+use yii\base\Model;
+
 /**
  * @property int $id
  * @property string $name
@@ -11,16 +13,8 @@ namespace simialbi\bexio\models;
  * @property string $date_format
  * @property string $iso_639_1
  */
-class Language extends ActiveRecord
+class Language extends Model
 {
-    /**
-     * {@inheritDoc}
-     */
-    public static function primaryKey(): array
-    {
-        return ['id'];
-    }
-
     public function rules(): array
     {
         return [

@@ -6,6 +6,7 @@ use libphonenumber\NumberParseException;
 use libphonenumber\PhoneNumberFormat;
 use libphonenumber\PhoneNumberUtil;
 use Yii;
+use yii\base\Model;
 
 /**
  * @property int $id
@@ -46,18 +47,10 @@ use Yii;
  * @property Country $country
  * @property Language $language
  */
-class Contact extends ActiveRecord
+class Contact extends Model
 {
     const CONTACT_TYPE_COMPANY = 1;
     const CONTACT_TYPE_PERSON = 2;
-
-    /**
-     * {@inheritDoc}
-     */
-    public static function primaryKey(): array
-    {
-        return ['id'];
-    }
 
     /**
      * {@inheritDoc}
