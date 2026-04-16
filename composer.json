@@ -1,0 +1,44 @@
+{
+    "name": "simialbi/yii2-bexio",
+    "description": "Yii2 extension for Bexio API integration",
+    "keywords": [
+        "yii2",
+        "bexio",
+        "api",
+        "integration"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/simialbi/yii2-bexio/issues",
+        "source": "https://github.com/simialbi/yii2-bexio"
+    },
+    "authors": [
+        {
+            "name": "Simon Karlen",
+            "email": "simi.albi@outlook.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "giggsey/libphonenumber-for-php": "^9.0",
+        "simialbi/yii2-rest-client": "^2.0.1",
+        "yiisoft/yii2": "^2.0.54"
+    },
+    "autoload": {
+        "psr-4": {
+            "simialbi\\bexio\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
