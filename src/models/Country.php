@@ -2,16 +2,15 @@
 
 namespace simialbi\bexio\models;
 
-use yii\base\Model;
-
 /**
- * @property int $id
- * @property string $name
- * @property string $name_short
- * @property string $iso3166_alpha2
  */
 class Country extends Model
 {
+    public ?int $id;
+    public string $name;
+    public string $name_short;
+    public string $iso3166_alpha2;
+
     /**
      * {@inheritDoc}
      */

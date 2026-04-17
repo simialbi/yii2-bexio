@@ -2,14 +2,13 @@
 
 namespace simialbi\bexio\models;
 
-use yii\base\Model;
-
 /**
- * @property int $id
- * @property string $name
  */
 class Title extends Model
 {
+    public ?int $id;
+    public string $name;
+
     /**
      * {@inheritDoc}
      */

@@ -2,19 +2,18 @@
 
 namespace simialbi\bexio\models;
 
-use yii\base\Model;
-
 /**
- * @property int $id
- * @property string $name
- * @property string $decimal_point
- * @property string $thousands_separator
- * @property int $date_format_id
- * @property string $date_format
- * @property string $iso_639_1
  */
 class Language extends Model
 {
+    public ?int $id;
+    public string $name;
+    public string $decimal_point;
+    public string $thousands_separator;
+    public int $date_format_id;
+    public string $date_format;
+    public string $iso_639_1;
+
     public function rules(): array
     {
         return [
